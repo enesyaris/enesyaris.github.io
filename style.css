@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none !important;
+}
+
+/* nav-bar */
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    height: 100px;
+    background: rgba(255, 255, 255, .3);
+    border-bottom: solid 3px rgb(219, 133, 21);
+    z-index: 10;
+}
+.logo{
+    transition: 2s;
+}
+.logo:hover{
+    transform: scale(0.9);
+}
+header h1{
+    width: 300px;
+    height: 100px;   
+}
+header h1 a{
+    display: block;
+    height: 100%;
+    text-indent: -9999px; 
+    background: url(LaPatisserielogo1.png) no-repeat center center;
+    background-size: 300px;
+    margin-top: 10px;
+}
+.cbk{
+  font-size: 24px;
+  font-weight: 600;
+  color:rgb(219, 133, 21) ;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+header nav ul li{
+    margin: 0 .5rem;
+}
+header nav ul li a{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    padding: .5rem .5rem;
+}
+header nav ul li a:hover{
+    color: rgb(219, 133, 21);
+    border-top: solid rgb(219, 133, 21);
+    border-bottom: solid rgb(219, 133, 21);
+}
+
+/* slider */
+.swiper{
+  cursor:pointer;
+}
+.swiper-container{
+    width: 100%;
+    height: 800px;
+  
+}
+section.slider .slider{
+    height: 800px;
+    width: 100%;
+    
+}
+/* About  */
+section.welcome{
+    display: flex;
+    padding: 0 4rem;
+    gap: 4rem;
+    margin-top: 15px;
+}
+
+section.welcome.about{
+    flex: 1;
+}
+section.welcome .about h3{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 64px;
+    line-height: 50px;
+
+}
+section.welcome .about p{
+   font-weight: 300;
+   font-size: 18px;
+    margin: 2rem 0rem;
+    line-height: 24px;
+    text-align: justify;
+}
+.aboutimg{
+    margin-top: 100px;
+}
+.imgpast{
+    border-radius: 10%;
+    width:350px;
+    height:250px;
+}
+/* product */
+.card{
+    width: 250px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    overflow: hidden;
+    margin-top: 30px;
+    
+}
+.card-image{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+    transition: transform .75s;
+}
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+.card-title{
+    color: wheat;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+
+}
+.producth3{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 64px;
+    line-height: 50px;
+    margin-left: 63px;
+}
+
+
+/* Contact */
+.contact-container{
+  max-width: 100%;
+  margin: auto;
+  
+  margin-top: 50px;
+  width: 100%;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  background: #C2C8CA;
+  box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
+  overflow: hidden;
+}
+.form-container{
+  padding: 20px;
+}
+.form-container h3{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-form{
+  display: grid;
+  row-gap: 1rem;
+}
+.contact-form input,.contact-form textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #2E3032;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+.contact-form textarea{
+  resize: none;
+  height: 200px;
+}
+.contact-form .send-button{
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.contact-form .send-button:hover{
+  background: hsl(181, 100%, 44%,0.8);
+  transition: 0.3s all linear;
+}
